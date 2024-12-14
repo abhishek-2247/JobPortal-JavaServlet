@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: url('images/img1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: 100% 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+        }
+        
+        .container {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border 0.3s;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #5b9bd5;
+            outline: none;
+        }
+        button {
+            width: 50%;
+            padding: 10px;
+            background-color: #5b9bd5;
+            color: white;
+            border: #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4a8cc3;
+        }
+    </style>
+</head>
+<body background="images/black.jpg">
+    <div class="container">
+        <h2>Register For Job Portal</h2>
+        <form action='Register' method='post'>
+            <input type="text" placeholder="Name" name='name' required>
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="email" placeholder="Gmail" name='gmail' required>
+            <input type="password" placeholder="Password" name='password' required>
+            <center><button type="submit">SUBMIT</button></center>
+        </form>
+    </div>
+</body>
+</html>
+
